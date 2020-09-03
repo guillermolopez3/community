@@ -15,7 +15,7 @@ class Uninitialized extends AuthState{}
 class AuthInProgress extends AuthState{}
 
 class Authenticated extends AuthState{
-  final FirebaseUser user;
+  final User user;
 
   const Authenticated(this.user);
 

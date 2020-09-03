@@ -31,7 +31,7 @@ class AuthBloc extends Bloc<AuthEvent,AuthState>{
       final sigIn = await _repository.isAuthenticated();
 
       if(sigIn){
-        FirebaseUser user = await _repository.getCurrentUser();
+        User user = await _repository.getCurrentUser();
         yield Authenticated(user);
       }else{
         yield Unauthenticated();
@@ -43,7 +43,7 @@ class AuthBloc extends Bloc<AuthEvent,AuthState>{
   }
 
   Stream<AuthState> _createUserMail(String mail, String pass) async*{
-    FirebaseUser user;
+    User user;
     yield AuthInProgress();
     try{
         final isAuth = await _repository.isAuthenticated();
@@ -64,7 +64,7 @@ class AuthBloc extends Bloc<AuthEvent,AuthState>{
     try{
       yield AuthInProgress();
       final sigIn = await _repository.isAuthenticated();
-      FirebaseUser user;
+      User user;
       if(sigIn){
         user = await _repository.getCurrentUser();
         yield Authenticated(user);
