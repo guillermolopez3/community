@@ -68,7 +68,9 @@ class _WelcomeState extends State<Welcome> {
                 'Crear Cuenta',
                 style: TextStyle(color: MyColors.prymaryColor,),
               ),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.of(context).pushNamed('/register');
+              },
             ),
             SizedBox(height: 15,),
             _ingresar()

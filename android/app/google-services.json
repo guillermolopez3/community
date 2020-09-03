@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "902690475727",
+    "firebase_url": "https://community-6d7c1.firebaseio.com",
+    "project_id": "community-6d7c1",
+    "storage_bucket": "community-6d7c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902690475727:android:7f9b67967f7005dc6871ba",
+        "android_client_info": {
+          "package_name": "com.grugui.cmarcas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902690475727-m2b9k3at4jebkmv4h87073ljbj2i57d6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7g2qUDiLJdZKCNTw8wBjKJpSjXx9UcCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902690475727-m2b9k3at4jebkmv4h87073ljbj2i57d6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
